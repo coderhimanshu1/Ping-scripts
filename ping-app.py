@@ -2,6 +2,7 @@ import time
 import requests
 
 # Define your app URLs
+APP_URL_remplr_unified = 'https://remplr.com/'
 APP_URL_remplr1 = 'https://remplr.onrender.com/'
 APP_URL_404_remplr_backend = 'https://remplr-backend.onrender.com/'
 APP_URL_404_jobly_backend = 'https://jobly-backend-x9gn.onrender.com'
@@ -24,6 +25,7 @@ def keep_awake():
         ping_app(APP_URL_jobly_fronend)
         ping_app(APP_URL_remplr1)
         ping_app(APP_URL_resume)
+        ping_app(APP_URL_remplr_unified)
         
         time.sleep(INTERVAL)
 
