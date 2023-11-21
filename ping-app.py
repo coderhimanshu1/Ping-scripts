@@ -2,7 +2,8 @@ import time
 import requests
 
 # Define your app URLs
-APP_URL_portfolio = 'https://coderhimanshu.com/'
+APP_URL_portfolio = 'https://himanshu.dev/'
+Pathos = 'https://pathos-backend.onrender.com'
 APP_URL_remplr_unified = 'https://remplr.com/'
 APP_URL_remplr1 = 'https://remplr.onrender.com/'
 APP_URL_404_remplr_backend = 'https://remplr-backend.onrender.com/'
@@ -22,6 +23,7 @@ def ping_app(url):
 def keep_awake():
     while True:
         ping_app(APP_URL_portfolio)
+        ping_app(Pathos)
         ping_app(APP_URL_404_remplr_backend)
         ping_app(APP_URL_404_jobly_backend)
         ping_app(APP_URL_jobly_fronend)
